@@ -1,7 +1,7 @@
 {
-	"name": "lib-template",
+	"name": "{{pkgName}}",
 	"version": "0.0.0",
-	"description": "",
+	"description": "{{desc}}",
 	"scripts": {
 		"dev": "vite",
 		"build:bundle": "rm -rf lib/ && rollup -c --bundleConfigAsCjs",
@@ -15,7 +15,7 @@
 		"prepare": "husky install"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "{{author}}",
 	"main": "es/index.js",
 	"module": "es/index.js",
 	"typings": "es/index.d.ts",
