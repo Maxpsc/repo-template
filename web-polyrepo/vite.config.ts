@@ -11,8 +11,8 @@ export default defineConfig(({ command }) => {
         lib: {
           entry: path.resolve(__dirname, 'src/index.ts'),
           formats: ['es', 'cjs', 'umd'],
-          name: '{{name}}',
-          fileName: '{{name}}',
+          name: '{{pkgName}}',
+          fileName: '{{pkgName}}',
         },
         rollupOptions: {
           output: { exports: 'named' },
@@ -28,7 +28,7 @@ export default defineConfig(({ command }) => {
       root: path.resolve(__dirname, 'demo'),
       resolve: {
         alias: {
-          '{{name}}': path.resolve(__dirname, 'src'),
+          '{{pkgName}}': path.resolve(__dirname, 'src'),
         },
       },
     }

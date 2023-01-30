@@ -1,4 +1,4 @@
-# {{name}}
+# {{pkgName}}
 
 > {{desc}}
 

@@ -1,4 +1,4 @@
 import { fooFunc } from '{name}'
 
-console.log('{{name}}')
+console.log('{{pkgName}}')
 fooFunc()
