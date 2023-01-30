@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": "./",
+    "sourceMap": false,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "strict": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "paths": {
+      "lib-template": ["src/index.ts"]
+    }
+  },
+  "include": ["src", "demo", "typings"],
+  "exclude": ["node_modules", "lib", "es", "dist"]
+}
