@@ -1,1 +1,5 @@
-export default function foo () {}
+
+export function run(options: Record<string, unknown>) {
+
+}
+
