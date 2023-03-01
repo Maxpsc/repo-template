@@ -21,20 +21,10 @@ module.exports = {
         modifiers: ['private'],
       },
     ],
-    '@typescript-eslint/explicit-member-accessibility': 'error',
-    '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-non-null-assertion': 'error',
-    'dirs/dirnames': ['error', { pattern: '^([a-z0-9\\-]+)|__tests__$' }],
-    'dirs/filenames': [
-      'error',
-      {
-        '**/*.md/*': '.*',
-        '**/*': '^[a-z0-9\\-\\.]+$',
-      },
-    ],
     'import/order': 'off',
   },
 }

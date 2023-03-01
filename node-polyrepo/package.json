@@ -21,13 +21,13 @@
     "test": "npm run test:once -- --watch",
     "test:once": "jest --runInBand --colors --forceExit",
     "coverage": "codecov",
-    "add-owner": "node scripts/npm-add-owner.js",
     "prepare": "husky install",
-    "release": "node scripts/release.js"
+    "release": "pnpm build && release"
   },
   "dependencies": {
     "chalk": "^4.1.1",
-    "commander": "^7.2.0"
+    "commander": "^7.2.0",
+    "og-toolkit": "^0.0.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
@@ -79,7 +79,7 @@
   },
   "author": "{{author}}",
   "publishConfig": {
-    "registry": "https://npm.corp.kuaishou.com/",
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "license": "MIT"
